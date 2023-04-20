@@ -189,6 +189,7 @@ a {
         button {
             font-size: 18rem;
             background-color: $secondary-color;
+            transition: background-color 0.3s;
             color: $primary-color;
             border: none;
             border-radius: 20rem;
@@ -224,18 +225,32 @@ a {
 // Main
 main {
     grid-column: 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 // Projects
 .projects {
+    grid-row: 1 / -1;
+    border: red solid 1px;
     img {
         width: 20rem;
         height: 20rem;
     }
 }
 
+// Announcements 
+.announcements {
+    grid-column: 2;
+    border: 1px solid red;
+}
+
 // Trending
 .trending {
+    grid-column: 2;
+    border: 1px solid red;
+
     .profile-picture {
         @include small-pfp();
     }

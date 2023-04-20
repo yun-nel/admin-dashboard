@@ -155,6 +155,7 @@ a {
 .header .header-right button {
   font-size: 18rem;
   background-color: #1892d3;
+  transition: background-color 0.3s;
   color: #ffffff;
   border: none;
   border-radius: 20rem;
@@ -183,13 +184,29 @@ a {
 
 main {
   grid-column: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
+.projects {
+  grid-row: 1/-1;
+  border: red solid 1px;
+}
 .projects img {
   width: 20rem;
   height: 20rem;
 }
 
+.announcements {
+  grid-column: 2;
+  border: 1px solid red;
+}
+
+.trending {
+  grid-column: 2;
+  border: 1px solid red;
+}
 .trending .profile-picture {
   width: 50rem;
   height: 50rem;
