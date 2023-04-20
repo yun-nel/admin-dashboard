@@ -1,0 +1,105 @@
+@mixin small-pfp {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+}
+
+// Global styles
+:root {
+    font-size: 6.25%;
+  }
+
+  body {
+    font-size: 16rem;
+    box-sizing: border-box;
+  }
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+h1, h5, h4 {
+    font-size: inherit;
+    margin: 0;
+  }
+
+p {
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+// Search bar
+.search-bar {
+    .icon {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .profile-picture {
+        @include small-pfp();
+    }
+}
+
+// Header
+.header {
+    margin-top: 100rem;
+    margin-bottom: 100rem;
+
+    .profile-picture {
+        width: 80rem;
+        height: 80rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+// Sidebar
+.sidebar {
+    margin-bottom: 100rem;
+
+    .main-logo {
+        width: 50rem;
+        height: 50rem;
+    }
+
+    .icon {
+        width: 25rem;
+    }
+}
+
+// Projects
+.projects {
+    
+    img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+// Trending
+.trending {
+    .profile-picture {
+        @include small-pfp();
+    }
+}
