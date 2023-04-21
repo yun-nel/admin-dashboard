@@ -56,7 +56,7 @@ a {
   grid-column: 1;
   grid-row: 1/4;
   padding-top: 30rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 .sidebar .logo-with-text {
   display: flex;
@@ -131,7 +131,7 @@ a {
   align-items: center;
   justify-content: end;
   margin-right: 70rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 .search-bar .icon {
   width: 25rem;
@@ -188,7 +188,7 @@ a {
   margin-bottom: 3rem;
 }
 .header .header-left .header-text :nth-child(2) {
-  font-weight: 900;
+  font-weight: 700;
   font-size: 22rem;
 }
 .header .header-right {
@@ -206,7 +206,7 @@ a {
   border: none;
   border-radius: 20rem;
   padding: 10rem 35rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-right: 20rem;
 }
 .header .header-right :nth-child(3) {
@@ -265,7 +265,7 @@ main p {
   flex-direction: column;
   padding-left: 40rem;
   padding-top: 40rem;
-  background: linear-gradient(to right, #1892d3 3.5%, #ffffff 3.5%);
+  background: linear-gradient(to right, #52b6eb 3.5%, #ffffff 3.5%);
 }
 .projects-cards .card p {
   flex: 1;
