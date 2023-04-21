@@ -60,6 +60,11 @@ a {
     color: inherit;
   }
 
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px #AFAFAF;
+}
+
 // Page layout
 .page-layout {
     display: grid;
@@ -263,12 +268,11 @@ main {
         background-color: $primary-color;
         padding-left: 40rem;
         padding-top: 40rem;
-        border-radius: 10px;
         background: linear-gradient(to right, $secondary-color 3.5%, $primary-color 3.5%);
-        box-shadow: 1px 3px 3px #AFAFAF;
 
         p {
             flex: 1;
+            font-size: 13rem;
         }
 
         .project-icons {
@@ -280,8 +284,37 @@ main {
 // Announcements 
 .announcements {
     grid-column: 2;
-    border: 1px solid red;
-    display: grid;
+    // display: grid;
+    // grid-template-rows: 32rem auto;
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+        font-size: 20rem;
+    }
+
+    h5 {
+        font-size: 13rem;
+    }
+
+    .card {
+        padding: 20rem;
+        flex-direction: column;
+        display: flex;
+        background-color: $primary-color;
+
+        .announcement {
+            font-size: 11rem;
+            padding-bottom: 10rem;
+            border-bottom: 1px solid lightgray;
+            margin-bottom: 10rem;
+        }
+
+        :last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
 }
 
 // Trending

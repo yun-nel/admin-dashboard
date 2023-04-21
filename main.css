@@ -36,6 +36,11 @@ a {
   color: inherit;
 }
 
+.card {
+  border-radius: 10px;
+  box-shadow: 1px 3px 3px #AFAFAF;
+}
+
 .page-layout {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -218,12 +223,11 @@ main {
   background-color: #ffffff;
   padding-left: 40rem;
   padding-top: 40rem;
-  border-radius: 10px;
   background: linear-gradient(to right, #1892d3 3.5%, #ffffff 3.5%);
-  box-shadow: 1px 3px 3px #AFAFAF;
 }
 .projects-cards .card p {
   flex: 1;
+  font-size: 13rem;
 }
 .projects-cards .card .project-icons {
   align-self: end;
@@ -232,8 +236,30 @@ main {
 
 .announcements {
   grid-column: 2;
-  border: 1px solid red;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+.announcements h4 {
+  font-size: 20rem;
+}
+.announcements h5 {
+  font-size: 13rem;
+}
+.announcements .card {
+  padding: 20rem;
+  flex-direction: column;
+  display: flex;
+  background-color: #ffffff;
+}
+.announcements .card .announcement {
+  font-size: 11rem;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 10rem;
+}
+.announcements .card :last-child {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .trending {
