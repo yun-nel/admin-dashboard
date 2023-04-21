@@ -45,7 +45,7 @@ a {
 
 .page-layout {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: minmax(250rem, 1fr) 5fr;
   grid-template-rows: 1fr 1fr 9fr;
   height: 100vh;
 }
@@ -55,6 +55,42 @@ a {
   color: #ffffff;
   grid-column: 1;
   grid-row: 1/4;
+  padding-top: 30rem;
+  font-weight: 900;
+}
+.sidebar .logo-with-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rem;
+  margin-left: 17rem;
+  font-size: 20rem;
+}
+.sidebar .logo-with-text .main-logo {
+  width: 40rem;
+  height: 40rem;
+}
+.sidebar .logo-with-text h1 {
+  margin-left: 10rem;
+}
+.sidebar .nav-list {
+  margin-bottom: 50rem;
+}
+.sidebar a {
+  display: flex;
+  padding-left: 22rem;
+}
+.sidebar a div {
+  align-self: center;
+  margin-left: 15rem;
+}
+.sidebar li {
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  transition: background-color 0.15s;
+}
+.sidebar li:hover {
+  color: #f2f2f2;
+  background-color: #1375a9;
 }
 .sidebar .main-logo {
   width: 50rem;

@@ -70,7 +70,7 @@ a {
 // Page layout
 .page-layout {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: minmax(250rem, 1fr) 5fr;
     grid-template-rows: 1fr 1fr 9fr;
     height: 100vh;
 }
@@ -81,6 +81,51 @@ a {
     color: $primary-color;
     grid-column: 1;
     grid-row: 1 / 4;
+    padding-top: 30rem;
+    font-weight: 900;
+
+    .logo-with-text {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30rem;
+        margin-left: 17rem;
+        font-size: 20rem;
+
+        .main-logo {
+            width: 40rem;
+            height: 40rem;
+        }
+
+        h1 {
+            margin-left: 10rem;
+        }
+
+    }
+
+    .nav-list {
+        margin-bottom: 50rem;
+    }
+
+    a {
+        display: flex;
+        padding-left: 22rem;
+
+        div {
+            align-self: center;
+            margin-left: 15rem;
+        }
+    }
+
+    li {
+        padding-bottom: 10rem;
+        padding-top: 10rem;
+        transition: background-color 0.15s;
+    }
+
+    li:hover {
+        color: $primary-color-dark;
+        background-color: $secondary-color-dark;
+    }
 
     .main-logo {
         width: 50rem;
