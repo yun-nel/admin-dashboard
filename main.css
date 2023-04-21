@@ -38,7 +38,8 @@ a {
 
 .page-layout {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 5fr;
+  height: 100vh;
 }
 
 .sidebar {
@@ -60,7 +61,7 @@ a {
   grid-column: 2;
   display: flex;
   padding-top: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
 .search-bar .search-left {
   display: flex;
@@ -117,7 +118,7 @@ a {
   background-color: #ffffff;
   display: flex;
   padding-left: 30rem;
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
   box-shadow: 0px 2px 3px #AFAFAF;
 }
 .header .header-left {
@@ -185,22 +186,54 @@ a {
 main {
   grid-column: 2;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  gap: 20rem;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 1fr 1fr;
+  margin-top: 20rem;
+  margin-right: 30rem;
+  margin-left: 30rem;
 }
 
 .projects {
   grid-row: 1/-1;
-  border: red solid 1px;
+}
+.projects h4 {
+  margin-bottom: 10rem;
+  font-size: 20rem;
 }
 .projects img {
   width: 20rem;
   height: 20rem;
 }
 
+.projects-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300rem, 1fr));
+  height: 80%;
+  gap: 20rem;
+}
+.projects-cards .card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding-left: 40rem;
+  padding-top: 40rem;
+  border-radius: 10px;
+  background: linear-gradient(to right, #1892d3 3.5%, #ffffff 3.5%);
+  box-shadow: 1px 3px 3px #AFAFAF;
+}
+.projects-cards .card p {
+  flex: 1;
+}
+.projects-cards .card .project-icons {
+  align-self: end;
+  padding: 20rem;
+}
+
 .announcements {
   grid-column: 2;
   border: 1px solid red;
+  display: grid;
 }
 
 .trending {
