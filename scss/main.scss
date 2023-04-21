@@ -71,6 +71,7 @@ a {
 .page-layout {
     display: grid;
     grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 1fr 9fr;
     height: 100vh;
 }
 
@@ -96,8 +97,7 @@ a {
     background-color: $primary-color;
     grid-column: 2;
     display: flex;
-    padding-top: 17px;
-    padding-bottom: 15px;
+    padding-top: 15rem;
     
     .search-left {
         display: flex;
@@ -155,7 +155,8 @@ a {
     background-color: $primary-color;
     display: flex;
     padding-left: $left-spacing;
-    padding-bottom: 15rem;
+    padding-top: 10rem;
+    padding-bottom: 30rem;
     box-shadow: 0px 2px 3px #AFAFAF;
 
     .header-left {
